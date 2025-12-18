@@ -1,6 +1,7 @@
 cat > .gitignore << 'EOF'
 # Build
 build/
+main
 *.out
 *.o
 *.a

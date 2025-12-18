@@ -3,10 +3,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-void *foo(); 
+void *foo(); //There is no difference of doing void* foo to void *foo
 
-//Do I always need to create a prototype of my function?
-//difference between void* foo and void *foo ?
+//Do I always need to create a prototype of my function? ANSWER: Since C99 we must allways sign the functions.
 
 int main(void) {
     pthread_t thread1;

@@ -1,0 +1,16 @@
+cat > .vscode/settings.json << 'EOF'
+{
+  "C_Cpp.default.cppStandard": "c17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.formatting": "clangFormat",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "files.exclude": {
+    "build/": true,
+    "**/.cmake": true
+  }
+}
+EOF

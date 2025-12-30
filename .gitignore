@@ -1,0 +1,44 @@
+cat > .gitignore << 'EOF'
+# OS generados
+.DS_Store
+Thumbs.db
+
+# Build genericos
+*.o
+*.a
+*.so
+*.exe
+*.out
+main
+app
+
+# CMake (completo)
+build/
+Build/
+cmake_build*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CMakeScripts/
+Testing/
+*.cmake
+CMakeLists.txt.user
+
+# IDEs
+.idea/
+.vscode/
+!.vscode/
+*.swp
+*.swo
+*~
+
+# Debug/Valgrind (mantén si planeas usarlo)
+*.dSYM/
+*.su
+vgcore.*
+core.*
+
+# Logs
+*.log
+EOF

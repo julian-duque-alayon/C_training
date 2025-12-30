@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CMake Auto Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            // Si esto falla, cambia ${workspaceFolderBasename} por el nombre real 'dynamic_arrays'
+            "program": "${fileDirname}/../build/dynamic_arrays",
+            "cwd": "${fileDirname}/../build",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "CMake: Auto Make (warnings)",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

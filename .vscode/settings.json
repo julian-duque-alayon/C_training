@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "CMakeLists.txt": "cmake"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+    "cmake.exportCompileCommands": true,
+    "cmake.configureOnOpen": false,
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true
+}

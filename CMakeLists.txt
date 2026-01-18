@@ -14,6 +14,8 @@ else()
 endif()
 
 # Agregar subdirectorios como proyectos
+add_subdirectory(Formatted_Input_Output)
 add_subdirectory(bitwise_operators)
 add_subdirectory(dynamic_arrays)
 add_subdirectory(threads)
+

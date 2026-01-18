@@ -4,9 +4,10 @@ get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 # Find Threads package
 find_package(Threads REQUIRED)
 
-add_executable(${PROJECT_NAME}
-    src/main.c
-)
+set(PROJECT_SOURCES
+    src/main.c)
+
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 

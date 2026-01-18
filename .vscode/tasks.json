@@ -2,37 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "CMake: Auto Detect Debug",
+            "label": "CMake: Build Active Target",
             "type": "shell",
-            "command": "mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug ..",
-            "options": {
-                "cwd": "${fileDirname}/.."
+            "command": "cmake --build ${command:cmake.buildDirectory} --target ${command:cmake.buildTargetName}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
             },
-            "group": "build",
-            "presentation": {
-                "reveal": "silent", // No te molesta si sale bien
-                "panel": "shared",
-                "close": true
-            }
-        },
-        {
-            "label": "CMake: Auto Make (warnings)",
-            "type": "shell",
-            "command": "make",
-            "options": {
-                "cwd": "${fileDirname}/../build"
-            },
-            "group": "build",
-            "dependsOn": "CMake: Auto Detect Debug",
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "presentation": {
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared",
-                "close": true
-            }
+            "problemMatcher": [],
+            "detail": "Builds the target currently selected in the CMake status bar."
         }
     ]
 }

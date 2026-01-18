@@ -3,7 +3,7 @@
 
 int main(void) {
     printf("Bitwise Operators Exercise\n");
-
+    printf("Hello debugger\n");
     int number = 10;
     decimal_to_binary(number);
 

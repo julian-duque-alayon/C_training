@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "variable_declaration.h"
 
 int main() {
-  printf("Hello, World!\n");
+  variable_declaration();
   return 0;
 }

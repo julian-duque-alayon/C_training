@@ -2,7 +2,8 @@
 get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 set(PROJECT_SOURCES
-    src/main.c)
+    src/main.c
+    src/variable_declaration.c)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 

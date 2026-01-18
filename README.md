@@ -14,6 +14,7 @@ This repository is organized into specific modules, each targetting a core area 
 
 | Module | Description | Key Concepts |
 | :--- | :--- | :--- |
+| **[Formatted I/O](./Formatted_Input_Output)** | Handling formatted data stream input and output. | `printf`, `scanf`, Format Specifiers. |
 | **[Bitwise Operators](./bitwise_operators)** | Low-level bit manipulation techniques. | AND, OR, XOR, Shifting, Masks. |
 | **[Dynamic Arrays](./dynamic_arrays)** | Hand-crafted dynamic memory management. | `malloc`, `realloc`, `free`, Array Resizing. |
 | **[Threads](./threads)** | Concurrent programming implementations. | `pthreads`, Mutexes, Race Conditions. |
@@ -55,6 +56,7 @@ Ensure you have the following installed on your system:
 
 ```text
 .
+├── Formatted_Input_Output/ # Formatted I/O (printf/scanf) exercises
 ├── bitwise_operators/  # Bit manipulation exercises
 ├── dynamic_arrays/     # Memory management & dynamic structures
 ├── threads/            # Concurrency and pthreads
@@ -66,6 +68,7 @@ Ensure you have the following installed on your system:
 
 ## 🎯 Learning Goals
 
+- Master **Formatted I/O** for precise data display and reading.
 - Master **Pointer Arithmetic** and memory layout.
 - Understand the intricacies of **Bitwise logic** for optimization.
 - Build robust **Dynamic Data Structures** from scratch.

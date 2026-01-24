@@ -8,7 +8,7 @@
             // This variable tells VS Code to ask CMake Tools for the current executable path
             "program": "${command:cmake.launchTargetPath}",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,

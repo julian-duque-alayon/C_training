@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "variable_declaration.h"
 
-int main() {
+int main()
+{
   variable_declaration();
   return 0;
 }

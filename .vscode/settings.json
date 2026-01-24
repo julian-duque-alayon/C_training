@@ -4,7 +4,8 @@
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
     "cmake.exportCompileCommands": true,
-    "cmake.configureOnOpen": false,
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "/home/msi_ubuntu/projects/C_training",
     "editor.formatOnSave": true,
     "files.trimTrailingWhitespace": true,
     "[c]": {
